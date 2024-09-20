@@ -17,7 +17,7 @@ module.exports = {
     liveReload: true,
   },
   resolve: {
-    extensions: [".js", ".jsx", "ts"],
+    extensions: [".js", ".jsx", ".ts"],
   },
   module: {
     rules: [
@@ -25,6 +25,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Overpass&family=Roboto+Condensed:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", system-ui;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 300px;
+}
+
+.sub-header {
+  font-size: 3rem;
+  position: relative;
+  bottom: 200px;
+}
+
+.sub-description {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 190px;
+  width: 44%;
+  text-align: center;
+}
+
+.image-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image-carousel-item img {
+  width: 321px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-carousel-item {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.image-carousel-item h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.image-carousel-item p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.image-carousel-item:nth-child(2) {
+  height: 550px;
+}
