@@ -37,11 +37,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .image-carousel-item img {
-  width: 321px;
-  height: 400px;
+  max-width: 321px;
+  min-height: 400px;
   object-fit: cover;
 }
 
