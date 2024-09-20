@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Examination for FE Developer",
   "main": "./src/index.js",
+  "homepage": "https://ezekiel-vasquez.github.io/Exam-FE",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server .",
@@ -34,6 +35,5 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "homepage": "https://ezekiel-vasquez.github.io/Exam-FE"
+  }
 }
