@@ -39,6 +39,8 @@
   flex-direction: row;
   overflow-x: auto;
   scroll-behavior: smooth;
+  width: 100%;
+  gap: 20px;
 }
 
 .image-carousel-item img {
@@ -62,6 +64,14 @@
   margin-top: 10px;
 }
 
+.image-carousel-item:nth-child(1) {
+  rotate: -10deg;
+}
+
 .image-carousel-item:nth-child(2) {
   height: 550px;
+}
+
+.image-carousel-item:nth-child(3) {
+  rotate: 10deg;
 }
