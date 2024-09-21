@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Examination for FE Developer",
   "main": "./src/index.js",
-  "private": false,
   "homepage": "https://ezekiel-vasquez.github.io/Exam-FE",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
