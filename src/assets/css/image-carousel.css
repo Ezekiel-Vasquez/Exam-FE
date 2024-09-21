@@ -1,9 +1,8 @@
-.image-carousel-item {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  max-width: calc(90% / 3) !important;
+@layer utilities {
+  .max-w-custom {
+    @apply !important;
+    max-width: calc(90% / 3);
+  }
 }
 
 .card-img {
@@ -12,25 +11,18 @@
   transition: transform 0.3s ease;
 }
 
-.image-carousel-item h3 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
 .image-carousel-item p {
-  font-size: 1rem;
-  margin-top: 10px;
   color: rgb(124, 124, 124);
 }
 
 @media screen and (max-width: 768px) {
   .swiper_container {
-    position: relative;
-    bottom: 146px;
+    width: 100%;
   }
 
   .image-carousel-item {
     width: 33% !important;
+    margin: 0 auto;
   }
 
   .card-img {

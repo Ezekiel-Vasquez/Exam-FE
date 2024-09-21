@@ -1,11 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 import "../assets/css/image-carousel.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
-import { Zoom } from "swiper/modules";
 
 const ImageCarousel = () => {
   const listOfSlider = [
@@ -62,11 +62,20 @@ const ImageCarousel = () => {
   ];
 
   const slider = useState(listOfSlider);
-  const [counter, setCounter] = useState(0);
+  const autoMove = () => {
+    const swiper = document.querySelector(".swiper_container").swiper;
+    setInterval(() => {
+      swiper.slideNext();
+    }, 3000);
+  };
+
+  useEffect(() => {
+    autoMove();
+  });
 
   return (
     <Swiper
-      className="swiper_container"
+      className="swiper_container relative bottom-[620px] h-[500px] w-[50%] "
       effect={"coverflowEffect"}
       spaceBetween={-10}
       grabCursor={true}
@@ -80,44 +89,40 @@ const ImageCarousel = () => {
         modifier: 1,
       }}
     >
-      <SwiperSlide className="image-carousel-item">
-        <img
-          src={slider[0][counter].imageLink}
-          alt="Client 1"
-          className="card-img"
-        />
-        <h3>{slider[0][counter].text}</h3>
-        <p>{slider[0][counter].location}</p>
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
+        <img src={slider[0][0].imageLink} alt="Client 1" className="card-img" />
+        <h3 className="text-xl mt-2.5">{slider[0][0].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][0].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][1].imageLink} alt="Client 2" className="card-img" />
-        <h3>{slider[0][1].text}</h3>
-        <p>{slider[0][1].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][1].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][1].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][2].imageLink} alt="Client 3" className="card-img" />
-        <h3>{slider[0][2].text}</h3>
-        <p>{slider[0][2].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][2].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][2].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][3].imageLink} alt="Client 4" className="card-img" />
-        <h3>{slider[0][3].text}</h3>
-        <p>{slider[0][3].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][3].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][3].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][4].imageLink} alt="Client 5" className="card-img" />
-        <h3>{slider[0][4].text}</h3>
-        <p>{slider[0][4].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][4].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][4].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][5].imageLink} alt="Client 6" className="card-img" />
-        <h3>{slider[0][5].text}</h3>
-        <p>{slider[0][5].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][5].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][5].location}</p>
       </SwiperSlide>
-      <SwiperSlide className="image-carousel-item">
+      <SwiperSlide className="image-carousel-item flex items-center justify-center flex-col max-w-custom">
         <img src={slider[0][6].imageLink} alt="Client 7" className="card-img" />
-        <h3>{slider[0][6].text}</h3>
-        <p>{slider[0][6].location}</p>
+        <h3 className="text-xl mt-2.5">{slider[0][6].text}</h3>
+        <p className="text-base mt-2.5">{slider[0][6].location}</p>
       </SwiperSlide>
     </Swiper>
   );

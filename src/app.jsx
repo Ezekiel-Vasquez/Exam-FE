@@ -7,16 +7,16 @@ import "../src/app.css";
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Navbar className="w-full" />
       <header>
-        <Slide />
+        <Slide className="w-full" />
       </header>
-      <main>
-        <section className="sub-section">
-          <div className="sub-header slide-right">
+      <main className="flex justify-center items-center flex-col">
+        <section className="sub-section relative bottom-[620px] h-[300px] w-[600px] ">
+          <div className="text-3xl">
             <h1 className="text-center">Quality Products</h1>
           </div>
-          <div className="sub-description slide-right">
+          <div className="text-lg text-center text-[#948e8e] font-normal mt-10">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -25,10 +25,8 @@ const App = () => {
             </p>
           </div>
         </section>
-        <section className="sub-section">
-          <ImageCarousel />
-        </section>
       </main>
+      <ImageCarousel className="w-full" />
     </>
   );
 };

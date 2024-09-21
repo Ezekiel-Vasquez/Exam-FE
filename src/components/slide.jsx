@@ -40,22 +40,26 @@ const Slide = () => {
   }, [counter]);
 
   return (
-    <>
-      <div className="header-section-carousel">
-        <div className="carousel-item">
-          <img src={slider[0].imageLink[counter]} alt="nature" />
-          <div className="carousel-caption">
+    <div className="overflow-x-hidden">
+      <div className="min-h-[150vh]">
+        <div className="flex justify-center items-center flex-col">
+          <img
+            src={slider[0].imageLink[counter]}
+            alt="nature"
+            className=" w-full h-[100vh] object-cover slide-image"
+          />
+          <div className="carousel-caption relative bottom-[500px] left-[60%] transform -translate-x-1/2 -translate-y-1/2 text-white text-start w-full text-[0.9rem] leading-[5]">
             <span>Welcome To TenTwenty Farms</span>
-            <h1 className="caption-Header">
+            <h1 className="caption-Header  flex justify-start items-start flex-col w-[600px] text-[3.8rem] word-spacing-[0.19rem] leading-[0.9] gap-[10px]">
               <span>From Our Farms</span>
               <span>To Your Hands</span>
             </h1>
           </div>
         </div>
       </div>
-      <div className="slider-counter-group">
-        <div className="image-count-down">
-          <div className="image-container">
+      <div className="slider-counter-group flex justify-start items-center relative bottom-[790px] left-[140px] gap-[29px]">
+        <div className="image-count-down border border-white p-[18px] h-[137px] w-[137px] ">
+          <div className="image-container flex justify-center items-center w-full h-full border border-white">
             <img
               src={
                 slider[0].imageLink[
@@ -63,13 +67,19 @@ const Slide = () => {
                 ]
               }
               alt=""
+              className="w-full h-full object-cover cursor-pointer"
               onClick={autoSlide}
             />
-            <span onClick={autoSlide}>NEXT</span>
+            <span
+              onClick={autoSlide}
+              className="absolute text-center text-white cursor-pointer"
+            >
+              NEXT
+            </span>
           </div>
         </div>
 
-        <div className="Slide-Counter">
+        <div className="Slide-Counter flex justify-center items-center text-[0.9rem] font-normal leading-[1.5] mx-[5px] text-white min-w-[100px] w-[170px]">
           <span>
             {counter.toString().length < 1
               ? counter === 3
@@ -77,7 +87,7 @@ const Slide = () => {
                 : counter + 1
               : `0${counter === 4 ? 0 : counter + 1}`}
           </span>
-          <hr />
+          <hr className="border-[0.4px] border-white rounded-full mx-[10px] w-full" />
           <span>
             {slider[0].imageLink.toString().length < 1
               ? slider[0].imageLink.length
@@ -85,7 +95,7 @@ const Slide = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

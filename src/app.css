@@ -1,56 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Overpass&family=Roboto+Condensed:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Work Sans", system-ui;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-.sub-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  bottom: 300px;
-}
-
-.sub-header {
-  font-size: 3rem;
-  position: relative;
-  bottom: 200px;
-}
-
-.sub-description {
-  font-size: 1.2rem;
-  position: relative;
-  bottom: 190px;
-  width: 44%;
-  text-align: center;
-  color: rgb(148, 142, 142);
-  font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .sub-section {
-    bottom: 466px;
-    left: 7px;
-    font-weight: 500;
-  }
-  .sub-header {
-    font-size: 1.66rem;
-    position: relative;
-    bottom: 200px;
-  }
-
-  .sub-description {
-    font-size: 1rem;
-    position: relative;
-    bottom: 184px;
-    width: 77%;
-    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 100px;
   }
 }

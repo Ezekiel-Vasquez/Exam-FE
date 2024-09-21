@@ -5,9 +5,9 @@ import "../assets/css/navbar.css";
 const Navbar = () => {
   return (
     <div className="nav-container">
-      <nav className="Navbar">
+      <nav className="Navbar bg-white absolute top-0 left-0 right-0 z-[1] p-[30px_19px] m-[25px_22px] ">
         <div className="flex justify-between items-center">
-          <div className="nav-group-link">
+          <div className="nav-group-link flex justify-start items-center w-full gap-[18px] px-[20px] text-[0.9rem]">
             <a href="#" className="nav-item">
               About
             </a>
