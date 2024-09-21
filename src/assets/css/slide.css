@@ -62,23 +62,24 @@
   }
 
   .carousel-caption {
-    bottom: 900px;
+    bottom: 620px;
+    left: 140px;
   }
 
   .caption-Header {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .slider-counter-group {
-    bottom: 500px;
-    left: 0;
-    padding: 10px;
+    bottom: 127px;
+    left: -139px;
+    padding: 20px;
   }
 
   .image-count-down,
   .Slide-Counter {
     position: relative;
     bottom: 600px;
-    left: 90px;
+    left: 260px;
   }
 }

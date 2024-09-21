@@ -48,9 +48,9 @@ const Slide = () => {
             alt="nature"
             className=" w-full h-[100vh] object-cover"
           />
-          <div className="carousel-caption relative bottom-[500px] left-[60%] transform -translate-x-1/2 -translate-y-1/2 text-white text-start w-full text-[0.9rem] leading-[5]">
+          <div className="carousel-caption relative bottom-[500px] text-white text-start w-full text-[0.9rem] leading-[6]">
             <span>Welcome To TenTwenty Farms</span>
-            <h1 className="caption-Header  flex justify-start items-start flex-col w-[600px] text-[3.8rem] word-spacing-[0.19rem] leading-[0.9] gap-[10px]">
+            <h1 className="caption-Header flex justify-start items-start flex-col w-[600px] text-[1rem] word-spacing-[0.19rem] leading-[0.9] gap-[10px]">
               <span>From Our Farms</span>
               <span>To Your Hands</span>
             </h1>

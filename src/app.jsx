@@ -13,9 +13,8 @@ const App = () => {
       </header>
       <main className="flex justify-center items-center flex-col">
         <section className="sub-section relative bottom-[620px] h-[300px] w-[600px] ">
-          <div className="text-3xl">
-            <h1 className="text-center">Quality Products</h1>
-          </div>
+          <h1 className=" text-3xl text-center">Quality Products</h1>
+
           <div className="text-lg text-center text-[#948e8e] font-normal mt-10">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
