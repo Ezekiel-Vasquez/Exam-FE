@@ -16,3 +16,25 @@
     margin: 200px;
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .sub-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sub-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 200px;
+  }
+}

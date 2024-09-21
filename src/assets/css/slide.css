@@ -6,15 +6,16 @@
   }
 
   .carousel-caption {
-    bottom: 400px;
+    bottom: 580px;
+    left: 29px;
   }
 
   .caption-Header {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .slider-counter-group {
-    bottom: 500px;
+    bottom: 600px;
     left: 0;
     padding: 10px;
   }
@@ -22,7 +23,7 @@
   .image-count-down,
   .Slide-Counter {
     position: relative;
-    bottom: 150px;
+    bottom: 50px;
   }
 }
 
@@ -34,7 +35,8 @@
   }
 
   .carousel-caption {
-    bottom: 400px;
+    bottom: 500px;
+    left: 50px;
   }
 
   .caption-Header {
@@ -43,7 +45,7 @@
 
   .slider-counter-group {
     bottom: 500px;
-    left: 0;
+    left: 30px;
     padding: 10px;
   }
 
@@ -79,7 +81,37 @@
   .image-count-down,
   .Slide-Counter {
     position: relative;
-    bottom: 600px;
+    bottom: 700px;
+    left: 260px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    bottom: 480px;
+    left: 140px;
+  }
+
+  .caption-Header {
+    font-size: 4rem;
+  }
+
+  .slider-counter-group {
+    bottom: 127px;
+    left: -139px;
+    padding: 20px;
+  }
+
+  .image-count-down,
+  .Slide-Counter {
+    position: relative;
+    bottom: 450px;
     left: 260px;
   }
 }
