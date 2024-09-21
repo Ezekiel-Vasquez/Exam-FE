@@ -6,11 +6,8 @@ const Slide = () => {
   const listOfSlider = {
     imageLink: [
       "https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478040.jpg?t=st=1726831928~exp=1726835528~hmac=21b5cf3fdcdd564f1e2695eb18631e6703fd71b614c351c8478c50d60f3a083b&w=740",
-
       "https://img.freepik.com/premium-photo/wallpaper-illustration-by-ai_1037184-131426.jpg?w=740",
-
       "https://img.freepik.com/premium-photo/mountains-background-night-view_1165970-531.jpg",
-
       "https://img.freepik.com/free-photo/nature-landscape-with-vegetation-flora_23-2150859683.jpg?t=st=1726832299~exp=1726835899~hmac=938837ee0d2bf205811dffa2db8d56f75e34c2109516fea210f4dfb532097898&w=740",
     ],
   };
