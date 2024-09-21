@@ -94,7 +94,7 @@
   }
 
   .carousel-caption {
-    bottom: 480px;
+    bottom: 612px;
     left: 140px;
   }
 
@@ -111,7 +111,7 @@
   .image-count-down,
   .Slide-Counter {
     position: relative;
-    bottom: 450px;
+    bottom: 594px;
     left: 260px;
   }
 }
