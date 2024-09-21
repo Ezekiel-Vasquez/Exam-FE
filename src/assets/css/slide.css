@@ -4,4 +4,81 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .carousel-caption {
+    bottom: 400px;
+  }
+
+  .caption-Header {
+    font-size: 2.5rem;
+  }
+
+  .slider-counter-group {
+    bottom: 500px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .image-count-down,
+  .Slide-Counter {
+    position: relative;
+    bottom: 150px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    bottom: 400px;
+  }
+
+  .caption-Header {
+    font-size: 2.5rem;
+  }
+
+  .slider-counter-group {
+    bottom: 500px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .image-count-down,
+  .Slide-Counter {
+    position: relative;
+    bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    bottom: 900px;
+  }
+
+  .caption-Header {
+    font-size: 5rem;
+  }
+
+  .slider-counter-group {
+    bottom: 500px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .image-count-down,
+  .Slide-Counter {
+    position: relative;
+    bottom: 600px;
+    left: 90px;
+  }
 }

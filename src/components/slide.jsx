@@ -46,7 +46,7 @@ const Slide = () => {
           <img
             src={slider[0].imageLink[counter]}
             alt="nature"
-            className=" w-full h-[100vh] object-cover slide-image"
+            className=" w-full h-[100vh] object-cover"
           />
           <div className="carousel-caption relative bottom-[500px] left-[60%] transform -translate-x-1/2 -translate-y-1/2 text-white text-start w-full text-[0.9rem] leading-[5]">
             <span>Welcome To TenTwenty Farms</span>
@@ -57,7 +57,7 @@ const Slide = () => {
           </div>
         </div>
       </div>
-      <div className="slider-counter-group flex justify-start items-center relative bottom-[790px] left-[140px] gap-[29px]">
+      <div className="slider-counter-group flex justify-start items-center relative bottom-[900px] left-[140px] gap-[29px]">
         <div className="image-count-down border border-white p-[18px] h-[137px] w-[137px] ">
           <div className="image-container flex justify-center items-center w-full h-full border border-white">
             <img

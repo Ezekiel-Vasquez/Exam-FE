@@ -15,7 +15,63 @@
   color: rgb(124, 124, 124);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .swiper_container {
+    width: 100%;
+  }
+
+  .image-carousel-item {
+    width: 33% !important;
+    margin: 0 auto;
+  }
+
+  .card-img {
+    max-width: 223px;
+    height: 330px;
+    max-height: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  .image-carousel-item h3 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .image-carousel-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .swiper_container {
+    width: 100%;
+  }
+
+  .image-carousel-item {
+    width: 33% !important;
+    margin: 0 auto;
+  }
+
+  .card-img {
+    max-width: 223px;
+    height: 330px;
+    max-height: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  .image-carousel-item h3 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .image-carousel-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
   .swiper_container {
     width: 100%;
   }
