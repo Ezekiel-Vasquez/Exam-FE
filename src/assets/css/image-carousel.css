@@ -20,4 +20,33 @@
 .image-carousel-item p {
   font-size: 1rem;
   margin-top: 10px;
+  color: rgb(124, 124, 124);
+}
+
+@media screen and (max-width: 768px) {
+  .swiper_container {
+    position: relative;
+    bottom: 146px;
+  }
+
+  .image-carousel-item {
+    width: 33% !important;
+  }
+
+  .card-img {
+    max-width: 223px;
+    height: 330px;
+    max-height: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  .image-carousel-item h3 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .image-carousel-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 }

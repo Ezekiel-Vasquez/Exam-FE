@@ -30,4 +30,27 @@
   bottom: 190px;
   width: 44%;
   text-align: center;
+  color: rgb(148, 142, 142);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-section {
+    bottom: 466px;
+    left: 7px;
+    font-weight: 500;
+  }
+  .sub-header {
+    font-size: 1.66rem;
+    position: relative;
+    bottom: 200px;
+  }
+
+  .sub-description {
+    font-size: 1rem;
+    position: relative;
+    bottom: 184px;
+    width: 77%;
+    line-height: 1.2;
+  }
 }
